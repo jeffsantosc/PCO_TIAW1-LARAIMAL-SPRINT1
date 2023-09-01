@@ -1,54 +1,44 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
-
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
-
-
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+Lar animal é um projeto voltado  para ajudar animais de rua e pessoas de baixa renda, ajudando os animais com ações de adoção, tratamento e cuidado. 
+Ajudando também as pessoas de baixa renda a encontrarem serviços sociais que forneçam: tratamento veterinário gratuito, ações de castração e ações de vacinação.
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Segundo uma pesquisa realizada em março de 2023 pelo IBP (Instituto Pet Brasil) o país possui cerca de 185mil animais abandonados ou resgatados sob a tutela de ONGs e grupos protetores, sendo 40% deles fruto de abandono e 60% tendo sido resgatados por maus tratos. Na região metropolitana de Minas Gerais, é possível enxergar essa realidade com os próprios olhos nas ruas onde nos últimos anos, e especialmente após a pandemia, o nível de abandonos está subindo consideravelmente.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Visando tentar mudar tal cenário nosso projeto LAR ANIMAL tem como objetivo criar uma aplicação/página web onde ONGs e grupos protetores possam se cadastrar para servirem como ponto de resgate e apoio a esses animais e onde possíveis tutores possam entrar em contato para dar um novo lar a eles. Além de criar uma ponte de ajuda mútua entre ONGs, grupos solidários e voluntários que queiram auxiliar tanto animais quanto tutores carentes, disponibilizando desde informações como fazer a abordagem certa a animais abandonados para resgate até locais onde oferecem atendimento veterinário gratuito e/ou a preço social.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+1.	Promoção da Adoção Responsável:
+	•	Facilitar a adoção de animais abandonados ou resgatados, conectando potenciais adotantes a abrigos locais ou grupos de resgate.
+	•	Incentivar a responsabilidade dos proprietários de animais adotados, promovendo o registro, a esterilização/castração e o cuidado adequado dos animais de estimação adotados. Isso pode envolver fornecer informações detalhadas sobre os procedimentos de esterilização/castração, orientações sobre cuidados básicos, como alimentação, higiene e saúde, além de oferecer suporte contínuo aos adotantes.
+	2.	Campanhas de Conscientização sobre Questões Específicas:
+	•	Informar o público sobre questões de bem-estar animal, incluindo a prevenção de crueldade, por meio de recursos educacionais como artigos, vídeos e guias.
+	•	Abordar tópicos relevantes, como o comportamento animal, saúde, treinamento e outras áreas que ajudem os proprietários a compreender e cuidar melhor de seus animais de estimação.
+	•	Promover campanhas de vacinação para proteger a saúde dos animais e conscientizar os proprietários sobre a importância das vacinas.
+	3.	Ser a Ponte Entre Doador e Receptor/Promover Colaboração entre ONGs e Empresas Privadas:
+	•	Facilitar o envolvimento de voluntários em atividades de resgate, cuidado e apoio aos animais, fornecendo uma plataforma onde pessoas interessadas possam se conectar com organizações de bem-estar animal.
+	•	Estabelecer parcerias estratégicas com outras organizações de bem-estar animal, veterinários locais e empresas privadas. Isso pode incluir a colaboração em campanhas de conscientização, arrecadação de fundos e programas de esterilização/castração em conjunto para maximizar o impacto.
+	4.	Definir Melhores Pontos de Vendas (com Preços Mais Acessíveis e/ou Descontos para Doadores):
+	•	Conectar empresas do setor pet dispostas a apoiar a causa animal, seja fornecendo produtos, ajudando na divulgação ou oferecendo descontos especiais para doadores, ONGs e tutores de animais de estimação.
+	•	Oferecer uma plataforma onde pais e mães de pets possam encontrar produtos e serviços a preços mais acessíveis, incentivando assim a adoção e cuidado responsável de animais.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A criação da aplicação "Lar Animal" é justificada por várias razões, como o bem estar animal, conscientização e educação, e impacto sustentável. De forma resumida é facilitar o auxilio aos animais de diferentes formas.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Definição prévia de púbico alvo B2C:
+Homens e mulheres de 16 a 50 anos , moradores da região metropolitana de Belo Horizonte, com renda mensal de pelo menos 1 salário-mínimo, que tem ou gostariam de ter um animal de estimação e/ou precisam de auxílio com os custos ou cuidados com os animais.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Homens e mulheres de 18 a 45 anos, que participam, ou gostariam de participar mais, ativamente da causa animal e gostariam de se voluntariar para auxiliar ONGs e grupos protetores de animais com o resgate responsável de animais em situação de abandono ou maus tratos.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Definição prévia de público alvo 2B2:
+
+ONGs e grupos de proteção animal de pequeno e médio porte que gostariam de alcançar mais animais e pessoas em situação de vulnerabilidade porém, por motivos financeiros, visibilidade ou de recursos humanos não conseguem tanta participação e visibilidade para tornar esse objetivo possível .
+
+Redes de Pet Shop, Casas de Ração e Clínicas veterinárias de pequeno e médio porte que tem como valor se engajar em causas sociais e auxiliar animais e tutores em situação de vulnerabilidade social.
+
