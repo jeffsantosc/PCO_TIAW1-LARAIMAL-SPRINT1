@@ -19,6 +19,7 @@ Visando tentar mudar tal cenário, nosso projeto LAR ANIMAL tem como objetivo cr
 * Jefferson Santos Costa
 * Kauan Maia Moreira Fernandes
 * Rhillary Pawany Souza Carvalho
+* Pedro Henrique de Oliveira Mello
 
 ## Orientador
 
