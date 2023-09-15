@@ -4,6 +4,10 @@ Sistema Web que conecta ONGs grupos de proteção animal, voluntários e tutores
 
 Tecnologias: 
 
+* Versionamento de código:
+
+-Git + Github
+
 *Front: 
 
 -  HTML + CSS; 
@@ -87,18 +91,17 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Registro De Usuário | ALTA | PROGRAMADOR |
-|RF-002| Perfil De Usuário Comum ou Administrador   | ALTA | PROGRAMADOR |
-|RF-003| Modulo de doações | ALTA | PROGRAMADOR |
-|RF-004| Gerenciamento de parceiros   | MÉDIA | PROGRAMADOR|
-|RF-005| Busca de serviços e detalhes | ALTA | PROGRAMADOR |
-|RF-006| Notificações   | MÉDIA | PROGRAMADOR |
-|RF-007| Avaliações e Comentários dos Serviços | BAIXA | PROGRAMADOR |
-|RF-008| Suporte ao usuário   | MÉDIA | PROGRAMADOR |
-|RF-009| Mapa interativo | BAIXA | PROGRAMADOR |
-|RF-010| Agendamentos online   | MÉDIA | PROGRAMADOR |
-|RF-011| Fóruns de discussão | BAIXA | PROGRAMADOR |
-|RF-012| Aba educacional com suporte em texto e vídeo   | BAIXA | PROGRAMADOR |
+|RF-001| Registro De Usuário | ALTA | Jefferson |
+|RF-002| Perfil De Usuário Comum ou Administrador   | ALTA | Jefferson |
+|RF-003| Modulo de doações | ALTA | Kauan |
+|RF-004| Gerenciamento de parceiros   | MÉDIA | Elder|
+|RF-005| Busca de serviços e detalhes | ALTA | Kauan |
+|RF-006| Avaliações e Comentários dos Serviços | BAIXA | Manuela |
+|RF-007| Suporte ao usuário   | MÉDIA | Manuela |
+|RF-008| Mapa interativo | BAIXA | Itallo |
+|RF-009| Agendamentos online   | MÉDIA | Elder |
+|RF-010| Fóruns de discussão | BAIXA | Rhillary |
+|RF-011| Aba educacional com suporte em texto e vídeo   | BAIXA | Rhillary |
 
 
 ### Requisitos não Funcionais
