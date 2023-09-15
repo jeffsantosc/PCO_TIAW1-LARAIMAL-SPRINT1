@@ -113,7 +113,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-006| Deve permitir que o usuário faça a customização de seu perfil |  BAIXA | 
 |RNF-007| O sistema deve permitir que usuarios possam compartilhar informações nas redes sociais | BAIXA | 
 |RNF-008| Deve permitir que usuario escolha sua localização |  ALTA | 
-|RNF-009| O sistema deve ter suporte a incremetos | ALTA | 
+|RNF-009| O sistema deve ter suporte a incrementos | ALTA | 
 |RNF-010| O sistema deve ter robustez | MÉDIA | 
 |RNF-011| O sistema deve ter a possibilidade de trabalhar integradamente a outro sistema |  ALTA | 
 
