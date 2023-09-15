@@ -6,7 +6,7 @@ Sistema Web que conecta ONGs grupos de proteção animal, voluntários e tutores
 
 Versionamento de código:
 
-Git + Github
+-  Git + Github
 
 *Front: 
 
