@@ -62,11 +62,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |--------------------|------------------------------------|----------------------------------------| 
 
-|Tutor de pet   | Me cadastrar   | Encontrar campanhas em andamento e serviços por perto           | 
+|Tutor de pet  | Me cadastrar   | Encontrar campanhas em andamento e serviços por perto           | 
 
-|Futuro tutor de pet   | Me cadastrar   | Encontrar instituições por perto onde possa adotar um pet        | 
+|Futuro tutor de pet  | Me cadastrar   | Encontrar instituições por perto onde possa adotar um pet        | 
 
-|Voluntário     |   Me cadastrar  | Encontrar instituições e grupos de proteção animal que precisem de auxilio  | 
+|Voluntário    |   Me cadastrar  | Encontrar instituições e grupos de proteção animal que precisem de auxilio  | 
 
 |Doador | Me cadastrar     |  Encontrar instituições, grupos de proteção animal ou tutores de pet que precisem de doação | 
 
