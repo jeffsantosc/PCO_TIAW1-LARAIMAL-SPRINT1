@@ -2,11 +2,11 @@
 
 Sistema Web que conecta ONGs grupos de proteção animal, voluntários e tutores que tenham interesse de resgatar, cuidar e adotar animais em situações de vulnerabilidade, o sistema oferece informações sobre adoção, serviços veterinários gratuitos, campanhas e parcerias com empresas do setor pet. 
 
-Tecnologias: 
+*Tecnologias: 
 
-* Versionamento de código:
+Versionamento de código:
 
--Git + Github
+Git + Github
 
 *Front: 
 
