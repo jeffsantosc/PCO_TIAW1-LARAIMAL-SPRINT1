@@ -74,7 +74,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Administradores de petshops e empresas pet       | Cadastrar minha empresa                 | Linkar dados de contato, redes sociais e endereçar o local de atuação |
 |Administradores de petshops e empresas pet  | Editar minha página/aba           | Divulgar serviços, promoções e campanhas sociais oferecidas com suas respectivas datas e horários               |
 |Administradores de petshops e empresas pet       | Ter acesso a dados básicos e de contato de outras instituições e empresas                 | Ter acesso a dados básicos e de contato de outras instituições e empresas       | Oferecer parcerias e campanhas de divulgação e colaboração mutua |
-|Donos de clínicas veterinárias       | Clinica                 | Linkar dados de contato, redes sociais e endereçar o local de atuação |
+|Donos de clínicas veterinárias       | Cadastrar minha clínica                | Linkar dados de contato, redes sociais e endereçar o local de atuação |
 |Donos de clínicas veterinárias  | Editar minha página/aba           | Divulgar os serviços oferecidos, com suas datas valores e horários               |
 |Donos de clínicas veterinárias       | Ter acesso a dados básicos e de contato de outras instituições e empresas                 | Ter acesso a dados básicos e de contato de outras instituições e empresas       | Oferecer parcerias e campanhas de divulgação e colaboração mutua |
 
