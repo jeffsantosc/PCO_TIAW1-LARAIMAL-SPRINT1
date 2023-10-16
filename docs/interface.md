@@ -15,7 +15,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 ### Home Page
 Essa é a primeira página que irá aparecer para o usuário ao acessar a aplicação contendo a logo um baner de destaques e as principais informações do nosso portal. Com um menu de navegação localizado a esquerda, e os serviços oferecidos além de nossos parceiros.
 
-![Home Page](img/homepage.PNG)
+![Home Page](img/tela%20inicio.PNG)
 
 ### Página de login 
 Essa página é a que irá aparecer para os usuários ou logarem em suas contas ou fazerem cadastro para login
