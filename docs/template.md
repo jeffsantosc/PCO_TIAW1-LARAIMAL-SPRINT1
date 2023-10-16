@@ -1,36 +1,48 @@
 # Template padrão do site
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-
-Explique as guias de estilo utilizadas no seu projeto.
-
 ## Design
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+Todo site será composto por um layout composto por uma barra de navegação localizada no cabeçalho, onde se encontrarão a logo da aplicação no canto esquerdo e um menu de navegação com os links básicos no canto superior esquerdo com a tipografia Arial. O corpo do site será composto por 3 seções de contéudo em que o título principal terá a tipografia Montsserat Large, os títulos de seção terão como tipografia padrão Montsserat medium e os componentes e corpo do texto terão a tipografia Arial.
+
+A barra de navegação e o rodapé das páginas usarão como cor padrão #8386ED
+
+Os botões usados na aplicação terão como cor padrão #A182ED e a fonte padrão será Arial.
+
+E o background da aplicação terá como padrão a cor #82CBED
 
 
 ## Cores
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+![Paleta de cores padrão](img/AdobeColor-Paleta%20de%20cores%20site%20(1).jpeg)
+
+ #82A9ED
+ #A182ED
+ #8386ED
+ #82CBED
+ #BC69F0
 
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+Título da página: Montsserat large
+
+Título da seção: Montsserat medium
+
+Rótulos de componentes: Arial
+
+Corpo do texto: Arial
 
 
 ## Iconografia
 
-Defina os ícones que serão utilizados e suas respectivas funções.
+![Logo](img/LOGO.PNG)
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
+![ícone do instagram](img/instagram.png)
+
+![Ícone do facebook](img/facebook.png)
+
+![Ícone do Twitter](img/twitter.png)
+
+![Estilização Css Padrão](img/estilização-css.jpeg)
 
 
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
