@@ -44,5 +44,3 @@ Corpo do texto: Arial
 ![Ícone do Twitter](img/twitter.png)
 
 ![Estilização Css Padrão](img/estilização-css.jpeg)
-
-

@@ -1,0 +1,28 @@
+body {
+    background-color: #82CBED;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    background-color: #8386ED;
+
+  }
+  
+
+ 
+  h1 {
+    font-family: 'Montserrat Large', sans-serif;
+  }
+  
+  h2, h3, h4 {
+    font-family: 'Montserrat Medium', sans-serif;
+  }
+ 
+  p .card-text, .content-section {
+    font-family: Arial, sans-serif;
+  }
+  
+ 
+.button {
+    background-color: #A182ED;
+    color: white;
+}
