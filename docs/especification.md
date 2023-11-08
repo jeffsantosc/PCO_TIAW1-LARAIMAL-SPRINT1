@@ -98,7 +98,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| Busca de serviços e detalhes | ALTA | Kauan |
 |RF-006| Avaliações e Comentários dos Serviços | BAIXA | Manuela |
 |RF-007| Suporte ao usuário   | MÉDIA | Manuela |
-|RF-008| Mapa interativo | BAIXA | Itallo |
+|RF-008| Mapeamento de lojistas | BAIXA | Itallo |
 |RF-009| Agendamentos online   | MÉDIA | Elder |
 |RF-010| Fóruns de discussão | BAIXA | Rhillary |
 |RF-011| Aba educacional com suporte em texto e vídeo   | BAIXA | Rhillary |
