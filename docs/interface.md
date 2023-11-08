@@ -58,7 +58,7 @@ Tela onde os usuários poderão entrar em contato diretamente com as instituiç�
 ![Contato](img/contatos.PNG)
 
 ### Tela de agendamentos 
- Nessa tela os usuários poderão visualizar os serviços oferecidos pelos parceiros por perto e agendar consultas ou visitas para as instituições 
+ Nessa tela os usuários poderão visualizar informações como de endereço e contato de clinicas parceiras e agendar consultas ou visitas para as instituições 
 
  ![Agendamentos inicio](img/agendamentos%20inicio.PNG)
 
