@@ -17,34 +17,34 @@ Visando tentar mudar tal cenário nosso projeto LAR ANIMAL tem como objetivo cri
   
 1.	Promoção da Adoção Responsável: 
 
-•	Facilitar a adoção de animais abandonados ou resgatados, conectando potenciais adotantes a abrigos locais ou grupos de resgate. 
-
-•	Incentivar a responsabilidade dos proprietários de animais adotados, promovendo o registro, a esterilização/castração e o cuidado adequado dos animais de estimação adotados. Isso pode envolver fornecer informações detalhadas sobre os procedimentos de esterilização/castração, orientações sobre cuidados básicos, como alimentação, higiene e saúde, além de oferecer suporte contínuo aos adotantes. 
-
 2.	Campanhas de Conscientização sobre Questões Específicas: 
-
-•	Informar o público sobre questões de bem-estar animal, incluindo a prevenção de crueldade, por meio de recursos educacionais como artigos, vídeos e guias. 
-
-•	Abordar tópicos relevantes, como o comportamento animal, saúde, treinamento e outras áreas que ajudem os proprietários a compreender e cuidar melhor de seus animais de estimação. 
-
-•	Promover campanhas de vacinação para proteger a saúde dos animais e conscientizar os proprietários sobre a importância das vacinas. 
 
 3.	Ser a Ponte Entre Doador e Receptor/Promover Colaboração entre ONGs e Empresas Privadas: 
 
-•	Facilitar o envolvimento de voluntários em atividades de resgate, cuidado e apoio aos animais, fornecendo uma plataforma onde pessoas interessadas possam se conectar com organizações de bem-estar animal. 
-
-•	Estabelecer parcerias estratégicas com outras organizações de bem-estar animal, veterinários locais e empresas privadas. Isso pode incluir a colaboração em campanhas de conscientização, arrecadação de fundos e programas de esterilização/castração em conjunto para maximizar o impacto. 
-
 4.	Definir Melhores Pontos de Vendas (com Preços Mais Acessíveis e/ou Descontos para Doadores): 
 
-•	Conectar empresas do setor pet dispostas a apoiar a causa animal, seja fornecendo produtos, ajudando na divulgação ou oferecendo descontos especiais para doadores, ONGs e tutores de animais de estimação. 
 
-•	Oferecer uma plataforma onde pais e mães de pets possam encontrar produtos e serviços a preços mais acessíveis, incentivando assim a adoção e cuidado responsável de animais. 
 
   
 ## Justificativa 
 
-A criação da aplicação "Lar Animal" é justificada por várias razões, como o bem-estar animal, conscientização e educação, e impacto sustentável. De forma resumida é facilitar o auxílio aos animais de diferentes formas. 
+Facilitar a adoção de animais abandonados ou resgatados, conectando potenciais adotantes a abrigos locais ou grupos de resgate.  
+
+Incentivar a responsabilidade dos proprietários de animais adotados, promovendo o registro, a esterilização/castração e o cuidado adequado dos animais de estimação adotados. Isso pode envolver fornecer informações detalhadas sobre os procedimentos de esterilização/castração, orientações sobre cuidados básicos, como alimentação, higiene e saúde, além de oferecer suporte contínuo aos adotantes. 
+
+Informar o público sobre questões de bem-estar animal, incluindo a prevenção de crueldade, por meio de recursos educacionais como artigos, vídeos e guias.  
+
+Abordar tópicos relevantes, como o comportamento animal, saúde, treinamento e outras áreas que ajudem os proprietários a compreender e cuidar melhor de seus animais de estimação.  
+
+Promover campanhas de vacinação para proteger a saúde dos animais e conscientizar os proprietários sobre a importância das vacinas. 
+
+Facilitar o envolvimento de voluntários em atividades de resgate, cuidado e apoio aos animais, fornecendo uma plataforma onde pessoas interessadas possam se conectar com organizações de bem-estar animal.  
+
+Estabelecer parcerias estratégicas com outras organizações de bem-estar animal, veterinários locais e empresas privadas. Isso pode incluir a colaboração em campanhas de conscientização, arrecadação de fundos e programas de esterilização/castração em conjunto para maximizar o impacto. 
+
+Conectar empresas do setor pet dispostas a apoiar a causa animal, seja fornecendo produtos, ajudando na divulgação ou oferecendo descontos especiais para doadores, ONGs e tutores de animais de estimação.  
+
+Oferecer uma plataforma onde pais e mães de pets possam encontrar produtos e serviços a preços mais acessíveis, incentivando assim a adoção e cuidado responsável de animais.  
 
   
 ## Público-Alvo 
