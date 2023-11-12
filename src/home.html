@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lar Animal Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
+
+
+    <div id="cabecalho">
+        <nav class="navbar navbar-expand-sm px-4 " style="background-color: #F2AA52;" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html" style="color: #55038C;">
+                    <img src="./img/logo.png" alt="Logo" width="30" height="30"
+                        class="d-inline-block align-text-top">
+                    Lar Animal
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="sobre.html" style="color: #55038C;">Sobre
+                                nós</a>
+                            <a class="nav-link active" aria-current="page" href="#" style="color: #55038C;">Como
+                                ajudar</a>
+                            <a class="nav-link active" aria-current="page" href="#" style="color: #55038C;">Entrar</a>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </div>
+    <section id="conteudo">
+        <nav id="barralat">
+            <ul class="list-group">
+                <a href="perguntas.html" class="list-group-item list-group-item-action">Perguntas Frequentes</a>
+                <a href="#" class="list-group-item list-group-item-action">Cadastre-se</a>
+                <a href="#" class="list-group-item list-group-item-action">Pontos de Resgate</a>
+                <a href="#" class="list-group-item list-group-item-action">Entre em contato</a>
+            </ul>
+        </nav>
+        <article class="carrousel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/campanha ficticia.png" class="d-block w-100" alt="Imagem Indisponível">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/capa site.png" class="d-block w-100" alt="Imagem Indisponível">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/capa_carrosel.png" class="d-block w-100" alt="Imagem Indisponível">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <article class="about">
+                <h5 class="card-title" style="color: #55038C;"><br><strong>QUEM SOMOS?</strong> </h5>
+                <p>
+                    Nosso projeto LAR ANIMAL tem como objetivo criar uma aplicação web onde ONGs e grupos
+                    protetores possam se cadastrar para servirem como ponto de resgate para animais e
+                    tutores em situação de vilnerablidade e onde possíveis tutores possam entrar para dar um
+                    novo lar a esses animais. Além de criar uma ponte de ajuda mútua entre ONGs, grupos
+                    solidários e voluntários que queiram auxiliar tanto animais quanto tutores carentes,
+                    disponibilizando desde informações sobre como fazer a abordagem certa a animais
+                    abandonados para resgate até locais que oferecem atendimento veterinário gratuito e/ou a
+                    preço social.
+                </p>
+            </article>
+        </article>
+
+    </section>
+
+    <div class="cardsection">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="row pt-3 pb-3">
+                    <h2 style="color: #55038C;"><strong>Principais Serviços</strong></h2>
+                    <div class="col-12 col-md-3 pt-3">
+                        <img src="./img/doacao.png" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
+                                style="color: #F2AA52;"><br><strong>Doações</strong></a></h5>
+                    </div>
+
+                    <div class="col-12 col-md-3 pt-3">
+                        <img src="./img/adocao.png" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
+                                style="color: #F2AA52;"><br><strong>Adoção</strong></a></h5>
+                    </div>
+                    <div class="col-12 col-md-3 pt-3">
+                        <img src="assets/imgs/voluntario1-adoção.png" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
+                                style="color: #F2AA52;"><br><strong>Voluntariado</strong></a></h5>
+                    </div>
+                    <div class="col-12 col-md-3 pt-3">
+                        <img src="./img/discussao.png" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
+                                style="color: #F2AA52;"><br><strong>Campanhas</strong></a></h5>
+                    </div>
+                </div>
+
+                <div class="row pt-5 pb-3">
+                    <h2 style="color: #55038C;"><strong>Histórias de Sucesso</strong></h2>
+                    <div class="col-12 col-md-3 pt-3">
+                        <img src="./img/filhote1.jpg" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
+                                style="color: #F2AA52;"><br><strong>Corolino</strong></a></h5>
+                        <p class="card-text">
+                            Carolino foi resgatado de um lar abusivo em um sítio, onde ele e seus irmãos sofriam maus
+                            tratos e vivam em situação precarias. Após ser resgatado pela ONG Meu Pet Minha Vida, foi
+                            adotado por um lar responsável onde vive feliz e saudável com sua nova família.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-3 pt-3">
+                        <img src="./img/filhote2.jpg" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
+                                style="color: #F2AA52;"><br><strong>Senhor Pipo</strong></a></h5>
+                        <p class="card-text">
+                            Senhor Pipo, foi abandonado em uma caixa de papelão junto de sua mãe e seus irmãos próximo a
+                            uma igreja onde foi resgatado pelo grupo protetor Pata amiga. Ele e os outros foram postos
+                            para a adoção em uma feira feita em parceria com a prefeitura de Contagem e hoje é mascote
+                            de uma clínica veterinária após ser adotado por sua dona.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 pt-3">
+                        <img src="./img/filhote_crianca.jpg" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
+                                style="color: #F2AA52;"><br><strong>Pudim</strong></a></h5>
+                        <p class="card-text">
+                            Pudim foi abandonado na rua quando seus antigos donos tiveram seu primeiro filho, e ficou
+                            vagando pelas ruas da grande BH onde sofria maus tratos de todos até ser resgatado e
+                            posteriormente adoatado por Frederico e Ariel e sua família. Agora Pudim vive feliz com sua
+                            nova família fazendo compania para Lucas, o filho do casal.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 pt-3">
+                        <img src="./img/gato_crianca.jpg" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
+                                style="color: #F2AA52;"><br><strong>Jujuba</strong></a></h5>
+                        <p class="card-text">
+                            Jujuba era uma gata de rua que após ser atropelada foi resgatada pela Ong Ampara Animal, foi
+                            trata e adotada por um dos voluntários mirins que participam em uma parceria da ONG com as
+                            escolas da região metropolitana de BH
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div>
+            <h6 style="color: #55038C;">Redes sociais:</h6>
+            <p>
+                <spam><a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none">Facebook</a> |
+                </spam>
+                <spam><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none">Twitter</a> |
+                </spam>
+                <spam><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none">Instagram</a> | </spam>
+
+                Todos os Direitos Reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
