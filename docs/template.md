@@ -8,18 +8,18 @@ A barra de navegação e o rodapé das páginas usarão como cor padrão #8386ED
 
 Os botões usados na aplicação terão como cor padrão #A182ED e a fonte padrão será Arial.
 
-E o background da aplicação terá como padrão a cor #82CBED
+E o background da aplicação terá como padrão a cor #ffffff
 
 
 ## Cores
 
 ![Paleta de cores padrão](img/AdobeColor-Paleta%20de%20cores%20site%20(1).jpeg)
 
- #82A9ED
- #A182ED
- #8386ED
- #82CBED
- #BC69F0
+ #55038C 
+ #D9981E
+ #F2AA52
+ #F2762E
+ #F2C3A7
 
 
 ## Tipografia
