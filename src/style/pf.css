@@ -16,7 +16,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 0 auto; 
-    margin-top: 380px;
+    margin-top: 140px;
 }
 
 .cadastro-container h2 {
@@ -51,5 +51,30 @@ body {
     display: block;
     margin-top: 15px;
     text-decoration: none;
+    color: #55038C;
+}
+
+
+.cadastro-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: white;
+    
+}
+
+
+.cadastro-form select:focus {
+    outline: none;
+    
+}
+
+
+.cadastro-form select option {
+    background-color: white;
     color: #55038C;
 }
