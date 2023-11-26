@@ -49,23 +49,21 @@
         </nav>
         <article class="carrousel">
             <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/campanha ficticia.png" class="d-block w-100" alt="Imagem Indisponível">
+                        <a href="https://www.example.com/page1">
+                            <img src="img/capa_carrosel.png" class="d-block w-100" alt="Imagem 1">
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/capa site.png" class="d-block w-100" alt="Imagem Indisponível">
+                        <a href="https://www.example.com/page2">
+                            <img src="img/campanha ficticia.png" class="d-block w-100" alt="Imagem 2">
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/capa_carrosel.png" class="d-block w-100" alt="Imagem Indisponível">
+                        <a href="https://www.example.com/page3">
+                            <img src="img/capa_carrosel.png" class="d-block w-100" alt="Imagem 3">
+                        </a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -79,6 +77,20 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+        <script>
+            $(document).ready(function () {
+                $('.carousel').carousel();
+            });
+        </script>
+    </body>
+    
+    </html>
 
             <article class="about">
                 <h5 class="card-title" style="color: #55038C;"><br><strong>QUEM SOMOS?</strong> </h5>
