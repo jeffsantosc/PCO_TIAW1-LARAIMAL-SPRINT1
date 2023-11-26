@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/mapa.css">
-    <title>Lar Animal Homepage</title>
+    <title>Mapa De Parceiros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -46,13 +46,24 @@
 <div class="lista">
     <h2>Lista de Locais</h2>
     <ul>
-        <li>Local 1</li>
-        <li>Local 2</li>
-        <li>Local 3</li>
-
+        <li>
+            <h3>Climev - Veterinário 24h - Clínica Veterinária</h3>
+            <p>Endereço: Rua A, 123</p>
+            <button onclick="traceRoute(-19.9337286, -44.0691473)">Traçar Rota</button>
+        </li>
+        <li>
+            <h3>Clínica Veterinária Terra dos Bichos</h3>
+            <p>Endereço: Avenida B, 456</p>
+            <button onclick="traceRoute(-19.935337, -44.0534132)">Traçar Rota</button>
+        </li>
+        <li>
+            <h3>Hospital Veterinário Pet Cente</h3>
+            <p>Endereço: Praça C, 789</p>
+            <button onclick="traceRoute(-19.9660055, -44.0617235)">Traçar Rota</button>
+        </li>
+        
     </ul>
 </div>
-
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz6qkaFXhU9EHzDqjc7T19uQ8Zx8sm51E&callback=initMap" async defer></script>
     <script src="js/mapa.js"></script>

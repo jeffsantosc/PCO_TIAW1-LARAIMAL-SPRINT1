@@ -1,66 +1,87 @@
+var map;
+var directionsService;
+var directionsDisplay;
+
 function initMap() {
-    const mapOptions = {
-        center: { lat: -19.93909454345703, lng: -44.07603454589844 },
-        zoom: 15
-    };
-    const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: { lat: -19.9391353, lng: -44.0786435 },
+    zoom: 15
+  });
 
-    const infowindow = new google.maps.InfoWindow();
+  directionsService = new google.maps.DirectionsService();
+  directionsDisplay = new google.maps.DirectionsRenderer({
+    map: map,
+    suppressMarkers: true 
+  });
 
-    const selectedMarkerInfo = {
-        position: { lat: -19.935337, lng: -44.0534132 },
-        title: 'Local 2',
-        content: '<div><h2>Local 2</h2><p>Detalhes sobre o local 2.</p></div>'
-    };
+  var markers = []; 
 
-    const selectedMarker = new google.maps.Marker({
-        position: selectedMarkerInfo.position,
-        map: map,
-        title: selectedMarkerInfo.title
+  function addMarker(location, title, content) {
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map,
+      title: title
     });
 
-    selectedMarker.addListener('click', function() {
-        infowindow.setContent(selectedMarkerInfo.content);
-        infowindow.open(map, selectedMarker);
-        calculateAndDisplayRoute(selectedMarker.getPosition());
+    markers.push(marker); 
+
+    var infowindow = new google.maps.InfoWindow({
+      content: content
     });
 
-    function calculateAndDisplayRoute(destination) {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                const userLocation = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                };
+    marker.addListener('click', function () {
+      infowindow.open(map, marker);
+      calculateAndDisplayRoute(location);
+    });
+  }
 
-                const directionsService = new google.maps.DirectionsService();
-                const directionsRenderer = new google.maps.DirectionsRenderer();
-                directionsRenderer.setMap(map);
-
-                const request = {
-                    origin: userLocation,
-                    destination: destination,
-                    travelMode: google.maps.TravelMode.DRIVING
-                };
-
-                directionsService.route(request, function(result, status) {
-                    if (status === 'OK') {
-                        directionsRenderer.setDirections(result);
-                    }
-                });
-            }, function() {
-                handleLocationError(true, infowindow, map.getCenter());
-            });
-        } else {
-            handleLocationError(false, infowindow, map.getCenter());
-        }
+  var places = [
+    {
+      position: { lat: -19.9337286, lng: -44.0691473 },
+      title: 'Clinica',
+      content: 'Climev - Veterinário 24h - Clínica Veterinária'
+    },
+    {
+      position: { lat: -19.935337, lng: -44.0534132 },
+      title: 'Clínica',
+      content: 'Clínica Veterinária Terra dos Bichos'
+    },
+    {
+      position: { lat: -19.9660055, lng: -44.0617235 },
+      title: 'Clínica',
+      content: 'Hospital Veterinário Pet Cente'
     }
+    // Adicione mais lugares conforme necessário
+  ];
 
-    function handleLocationError(browserHasGeolocation, infowindow, userLocation) {
-        infowindow.setContent(browserHasGeolocation ?
-            'Erro: O serviço de geolocalização falhou.' :
-            'Erro: Seu navegador não suporta geolocalização.');
-        infowindow.setPosition(userLocation);
-        infowindow.open(map);
+  // Adicionar marcadores para os lugares
+  for (var i = 0; i < places.length; i++) {
+    addMarker(places[i].position, places[i].title, places[i].content);
+  }
+
+  // Função para traçar e exibir a rota
+  function calculateAndDisplayRoute(destination) {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var userPos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        var request = {
+          origin: userPos,
+          destination: destination,
+          travelMode: 'DRIVING'
+        };
+
+        directionsService.route(request, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Não foi possível calcular a rota: ' + status);
+          }
+        });
+      });
     }
+  }
 }
