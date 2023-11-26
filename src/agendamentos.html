@@ -32,7 +32,7 @@
             </div>
         </nav>
     </div>
-    
+
     <header>
         <h1>Agendamento de Consulta</h1>
     </header>
@@ -80,36 +80,10 @@
             <button class="agendar-button" onclick="agendarConsulta()">Agendar</button>
         </div>
     </div>
-
-    <script>
-        function showPopup(clinicName, clinicAddress) {
-            document.getElementById('clinicName').textContent = clinicName;
-            document.getElementById('clinicAddress').textContent = 'Endereço: ' + clinicAddress;
-            document.getElementById('clinicPopup').style.display = 'block';
-        }
-        function closePopup() {
-            document.getElementById('clinicPopup').style.display = 'none';
-        }
-        function agendarConsulta() {
-            const clinicName = document.getElementById('clinicName').textContent;
-            const appointmentDate = document.getElementById('appointmentDate').value;
-            const appointmentTime = document.getElementById('appointmentTime').value;
-            // Armazenar as informações no Local Storage
-            const appointmentData = {
-                clinicName,
-                appointmentDate,
-                appointmentTime
-            };
-            // Verificar se já existe algum agendamento no Local Storage
-            const existingAppointments = JSON.parse(localStorage.getItem('appointments')) || [];
-            // Adicionar o novo agendamento à lista de agendamentos
-            existingAppointments.push(appointmentData);
-            // Salvar a lista atualizada de agendamentos no Local Storage
-            localStorage.setItem('appointments', JSON.stringify(existingAppointments));
-            alert(`Consulta agendada em ${clinicName} em ${appointmentDate} às ${appointmentTime}`);
-            closePopup();
-        }
-    </script>
+    <head>
+        
+        <script src="agendamentos.js"></script>
+    </head>
 </body>
 <footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; position: fixed; bottom: 0; left: 0; right: 0;">
     <div>
