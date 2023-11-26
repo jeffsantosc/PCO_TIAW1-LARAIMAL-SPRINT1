@@ -24,9 +24,9 @@ function renderPosts() {
 function showPopup(avatarUrl) {
     const popup = document.getElementById('user-popup');
     const carousel = popup.querySelector('.carousel');
-    carousel.innerHTML = ''; // Limpa qualquer imagem existente no carrossel
+    carousel.innerHTML = ''; 
 
-    // Adiciona uma imagem ao carrossel para cada post com avatar
+    
     posts.forEach(post => {
         if (post.avatar) {
             const carouselItem = document.createElement('div');
@@ -54,7 +54,7 @@ function renderCommentsCarousel() {
     const carouselInner = document.querySelector('#comment-carousel .carousel-inner');
     carouselInner.innerHTML = '';
 
-    // Adiciona cada comentário como um item de carrossel
+    
     posts.forEach((post, index) => {
         const commentElement = document.createElement('div');
         commentElement.classList.add('carousel-item', index === 0 ? 'active' : '');
@@ -68,20 +68,46 @@ function renderCommentsCarousel() {
 
 function renderUserSidebar() {
     const userSidebar = document.querySelector('.user-sidebar');
-    // Adicione o código para exibir a foto do usuário e outras informações relevantes aqui
+    
 }
 
 function renderMainComments() {
     const mainCommentsList = document.getElementById('main-comments-list');
-    // Adicione o código para exibir os principais comentários dinamicamente aqui
+   
+}
+
+function calculateAndDisplayRoute(destination) {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var userPos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+
+            var request = {
+                origin: userPos,
+                destination: destination,
+                travelMode: 'DRIVING'
+            };
+
+            directionsService.route(request, function (response, status) {
+                if (status === 'OK') {
+                    directionsDisplay.setDirections(response);
+                } else {
+                    window.alert('Não foi possível calcular a rota: ' + status);
+                }
+            });
+        });
+    }
+
 }
 
 document.getElementById('post-form').addEventListener('submit', function (event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
     const message = document.getElementById('post-content').value;
-    const avatarNumber = getRandomNumber(1, 5); // Gera um número aleatório entre 1 e 5 para escolher a imagem do avatar
-    const avatar = `https://i.pravatar.cc/150?img=${avatarNumber}`; // Usa o serviço Pravatar para imagens de avatar aleatórias
+    const avatarNumber = getRandomNumber(1, 5); // 
+    const avatar = `https://i.pravatar.cc/150?img=${avatarNumber}`; 
     posts.push({ username, message, avatar });
     renderPosts();
     renderCommentsCarousel();
@@ -89,7 +115,7 @@ document.getElementById('post-form').addEventListener('submit', function (event)
     document.getElementById('post-content').value = '';
 });
 
-// Chame as funções de renderização adicionais conforme necessário
+
 renderPosts();
 renderCommentsCarousel();
 renderUserSidebar();
