@@ -1,0 +1,31 @@
+
+.map-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#map {
+    height: 700px;
+    width: 80%; 
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.lista {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lista h2 {
+    font-size: 30px;
+}
+
+.lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista li {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
