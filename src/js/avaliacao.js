@@ -20,7 +20,7 @@ const stars = document.querySelectorAll('.star');
             const username = usernameInput.value;
 
             if (rating && comment && username) {
-               
+                
                 const commentElement = document.createElement('div');
                 commentElement.innerHTML = `<strong>Nome do usuário:</strong> ${username}<br><strong>Avaliação:</strong> ${rating.getAttribute('data-rating')} estrela(s)<br><strong>Comentário:</strong> ${comment}`;
                 commentsDiv.appendChild(commentElement);
@@ -29,6 +29,7 @@ const stars = document.querySelectorAll('.star');
                 const hr = document.createElement('hr');
                 commentsDiv.appendChild(hr);
 
+                
                 stars.forEach(star => star.classList.remove('rated'));
                 commentInput.value = '';
                 usernameInput.value = '';
