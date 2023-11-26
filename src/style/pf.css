@@ -1,0 +1,55 @@
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.cadastro-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 380px;
+}
+
+.cadastro-container h2 {
+    margin-bottom: 20px;
+    color: #55038C;
+}
+
+.cadastro-form input[type="text"],
+.cadastro-form input[type="email"],
+.cadastro-form input[type="password"],
+.cadastro-form input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cadastro-form input[type="submit"] {
+    background-color: #F2AA52;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cadastro-form input[type="submit"]:hover {
+    background-color: #E29438;
+}
+
+.cadastro-form .signup-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #55038C;
+}
