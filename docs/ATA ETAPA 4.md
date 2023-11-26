@@ -1,20 +1,19 @@
 # ATA ETAPA 4
-Elder Luis
-------
+• **Elder Luis**
 
-Jefferson
-------
 
-Elder Luis
-------
+• **Jefferson**
 
-Kauan Maia
-------
 
-Manuela de Souza
-------
+• **Elder Luis**
 
-Rhillary Carvalho
-------
+
+• **Kauan Maia**
+
+
+• **Manuela de Souza**
+
+
+• **Rhillary Carvalho**
 
 
