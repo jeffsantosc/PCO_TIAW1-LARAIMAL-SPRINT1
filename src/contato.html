@@ -3,9 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Suporte</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+}
+
+a{
+    color: black;
+}
+
+body{
+    background-image: url(./img/pata.jpg);
+}
+
+
+        a {
+            color: #000;
+            text-decoration: none; 
+        }   
+
+
+
+#cartao{
+    font-family:  Arial, Helvetica, sans-serif;
+    background-color: white;
+    max-width: 80%;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#contato{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#cartao .info{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.botao{
+    text-align: center;
+}
+
+input[type=text]{
+    border-radius: 4px;
+    border: 1px solid ;
+    
+}
+input[type=tel]{
+    border-radius: 4px;
+    border: 1px solid ;
+    
+}
+
+textarea{
+    border-radius: 4px;
+    border: 1px solid ;
+    
+}
+
+input[type=submit]{
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid ;
+  
+    margin-bottom: 17px;
+}
+    </style>
 </head>
 <body>
+    <header>
+        <div id="cabecalho">
+            <nav class="navbar navbar-expand-sm px-4 " style="background-color: #F2AA52;" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="home.html" style="color: #55038C;">
+                        <img src="./img/logo.png" alt="Logo" width="30" height="30"
+                            class="d-inline-block align-text-top">
+                        Lar Animal
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="sobre.html" style="color: #55038C;">Sobre
+                                    nós</a>
+                                <a class="nav-link active" aria-current="page" href="perguntas.html" style="color: #55038C;">Como
+                                    ajudar</a>
+                                <a class="nav-link active" aria-current="page" href="login.html" style="color: #55038C;">Login</a>
+                            </div>
+                        </div>
+                </div>
+            </nav>
+        </div>
+
+    <div id="cartao">
+
+    <div id="contato">
+        <h1>Contate-nos</h1>
+    </div>
+
+    <div class="info">
+        <label for="nome">Nome completo:</label>
+        <input id="nome" type="text" placeholder="Digite seu nome aqui" >
+        <br>
+        
+        <label for="email">E-mail:</label>
+        <input id="email" type="text" placeholder="Digite seu e-mail aqui">
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input id="telefone" type="tel" placeholder="Digite seu telefone aqui no formato (DDD) 9 ####-####">
+        <br>
+        <label for="motivo">Motivo do Contato:</label>
+        <textarea name="Motivo" id="motivo" cols="100" rows="10"></textarea>
+        <br>
+        
     
+        
+
+    </div>
+    <div class="botao">
+        <input type="submit" value="Enviar">
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+  </div>
+
+  <footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; position: fixed; bottom: 0; left: 0; right: 0;">
+    <div>
+        <h6 style="color: #55038C;">Redes sociais:</h6>
+        <p>
+            <span><a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                    class="text-decoration-none" style="color: #55038C;">Facebook</a> |
+            </span>
+            <span><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                    class="text-decoration-none" style="color: #55038C;">Twitter</a> |
+            </span>
+            <span><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                    class="text-decoration-none" style="color: #55038C;">Instagram</a> | </span>
+
+            Todos os Direitos Reservados.
+        </p>
+    </div>
+</footer>
 </body>
 </html>
