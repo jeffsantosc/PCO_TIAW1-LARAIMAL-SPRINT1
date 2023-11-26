@@ -3,7 +3,7 @@
 
 
 • **Jefferson**
-Responsável pela responsividade, mudanças da nav bar, footer, criação / modificação das paginas de cadastro e login, criaçao do mapa interativo, implementação de API de cep
+Responsável pela responsividade, mudanças da nav bar, footer, criação / modificação das paginas de cadastro e login, criaçao do mapa interativo, implementação de API de cep, finalização das paginas de agendamento,
 
 • **Elder Luis**
 
