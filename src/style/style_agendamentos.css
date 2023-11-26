@@ -38,17 +38,19 @@ h1 {
 .clinic-img {
     max-width: 100%;
     height: auto;
+    margin: 0 auto; 
+    margin-top: 38px;
 }
 
 .clinic-button {
-    background-color: #55038C; /* Marrom SaddleBrown */
+    background-color: #55038C; 
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
 }
 
-/* Estilos para o popup */
+
 .popup {
     display: none;
     position: fixed;
@@ -74,7 +76,6 @@ h1 {
     cursor: pointer;
 }
 
-/* Estilos para os campos de data e hora */
 input[type="date"],
 input[type="time"],
 button.agendar-button {
@@ -82,7 +83,6 @@ button.agendar-button {
     margin: 10px 0;
 }
 
-/* Estilos da Navbar */
 nav {
     background-color: #F2AA52;
     color: #55038C;
@@ -104,14 +104,4 @@ nav {
 
 .navbar-nav a:hover {
     color: rgb(213, 229, 242);
-}
-
-/* Estilos do Footer */
-footer {
-    clear: both;
-    text-align: right;
-    background-color: #F2AA52;
-    color: #55038C;
-    padding: 10px;
-    font-size: small;
 }
