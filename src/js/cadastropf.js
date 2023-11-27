@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#cadastroForm').submit(function(e) {
+    $('#cadastro-form').submit(function(e) {
         e.preventDefault(); // Previne o envio do formulário
 
         // Obtém os valores dos campos do formulário
@@ -31,10 +31,11 @@ $(document).ready(function() {
         // Exibe os dados no console (simulação de envio)
         console.log(novoCadastro);
 
-        // Aqui você pode realizar a requisição AJAX para enviar os dados para o servidor ou manipular os dados de outra forma.
-        // Lembrando que este é um exemplo simples apenas para ilustração.
+        // Aqui você pode realizar a requisição AJAX para enviar os dados para um servidor ou manipular os dados de outra forma.
+        // Neste exemplo, vamos apenas simular um feedback de sucesso
+        alert('Cadastro enviado com sucesso!');
 
         // Reinicializa os campos do formulário após o envio (opcional)
-        $('#cadastroForm')[0].reset();
+        $('#cadastro-form')[0].reset();
     });
 });
