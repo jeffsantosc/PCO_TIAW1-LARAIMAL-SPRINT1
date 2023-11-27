@@ -1,0 +1,18 @@
+{
+  "usuario": [
+    {
+      "id": 1,
+      "nome": "jefferson"
+    },
+    {
+      "nome": "fulano",
+      "id": 2
+    }
+  ],
+  "usuariopj": [
+  {
+    "id":1,
+    "nome2": "bbreno"
+  }
+  ]
+}
