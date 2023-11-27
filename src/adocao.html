@@ -1,13 +1,14 @@
-<!DOCTYPE htl>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/adocao.css">
     <title>Página de Adoção</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="js/adocao.js"></script>
 </head>
 
 <body>
@@ -15,212 +16,113 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI/t1sP66jibD6tnWjXs6pAId9DeN/6o7By9uuwM=" crossorigin="anonymous"></script>
+    <script src="js/adocao.js"></script>
+
 
 
     <div id="cabecalho">
-        <nav class="navbar navbar-expand-sm px-4 " style="background-color: #F2AA52;" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md px-4" style="background-color: #F2AA52;" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html" style="color: #55038C;">
-                    <img src="./img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <a class="navbar-brand" href="home.html" style="color: #55038C; font-size: 35px; font-weight: 600;">
+                    <img src="./img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
                     Lar Animal
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="sobre.html"
-                                style="color: #55038C;">Sobre
-                                nós</a>
-                            <a class="nav-link active" aria-current="page" href="#" style="color: #55038C;">Como
-                                ajudar</a>
-                            <a class="nav-link active" aria-current="page" href="#" style="color: #55038C;">Entrar</a>
-                        </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="sobre.html"
+                            style="color: #55038C; font-size: 20px; font-weight: 600;">Sobre nós</a>
+                        <a class="nav-link active" aria-current="page" href="login.html"
+                            style="color: #55038C; font-size: 20px; font-weight: 600;">Login</a>
                     </div>
+                </div>
             </div>
         </nav>
     </div>
 
     <div class="text-center">
         <h1>Animais para adoção</h1>
-        <hr class=hr>
+        <hr class="hr">
     </div>
 
     <div class="container mt-5">
-        <div class="row mb-3">
-            <div class="col-md-3 mb-3">
+        <div class="row row-cols-1 row-cols-md-4 g-4 mb-3">
+            <!------------------------CARD--EXEMPLO--------------------------->
+            <div class="col">
                 <div class="card">
-
                     <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalPet1">
                             <img src="img/placeholder.png" class="img-thumbnail">
                         </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
+                        <h5 class="card-title">Pet Exemplo</h5>
+                        <p class="card-text">Descrição do pet 1.</p>
+                        <button type="button" class="btn" data-bs-toggle="modal"
+                            style="color: white; background-color:#55038C;" data-bs-target="#modalPet1">Mostrar
+                            mais</button>
                     </div>
                 </div>
-
             </div>
 
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
+            <!-- Modal para adicionar novo Pet -->
+            <div class="modal fade" id="novoPetModal" tabindex="-1" aria-labelledby="novoPetModalLabel"
+                aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #F2AA52;">
+                            <h5 class="modal-title" id="novoPetModalLabel">Novo Pet</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="novoPetForm">
+                                <div class="mb-3">
+                                    <label for="petNome" class="form-label">Nome do Pet:</label>
+                                    <input type="text" class="form-control" id="petNome" required>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <label for="petEspecie" class="form-label">Espécie:</label>
+                                        <input type="text" class="form-control" id="petEspecie" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="petIdade" class="form-label">Idade:</label>
+                                        <input type="text" class="form-control" id="petIdade" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="petImagem" class="form-label">Imagem do Pet:</label>
+                                    <input type="file" class="form-control" id="petImagem" accept="image/*">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="petDescricao" class="form-label">Descrição breve do Pet:</label>
+                                    <textarea class="form-control" id="petDescricao" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn mx-auto"
+                                        style="background-color: #55038C; color: white;"
+                                        onclick="salvarNovoPet()">Salvar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-
             </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <div class="card">
-
-                    <div class="card-body text-center" style="background-color: #F2AA52;">
-                        <a href="DetalhesPet.html">
-                            <img src="img/placeholder.png" class="img-thumbnail">
-                        </a>
-                        <h5 id="pet" class="card-title"  style="color: #55038C;">Pet</h5>
-                        <p class="card-text">Aqui entrará uma breve descrição do pet.</p>
-                    </div>
-                </div>
-
-            </div>
-
 
         </div>
     </div>
 
-    <footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
+    <!----------------Botão para novo Pet ------------------>
+    <div style="color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
+        <button type="button" class="btn" id="addPet" data-bs-toggle="modal" data-bs-target="#novoPetModal"
+            style="color: white; background-color:#55038C;">Adicionar Pet</button>
+    </div>
+
+    <footer
+        style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
         <div>
             <h6 style="color: #55038C;">Redes sociais:</h6>
             <p>
@@ -232,15 +134,23 @@
                 </span>
                 <span><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
                         class="text-decoration-none" style="color: #55038C;">Instagram</a> | </span>
-    
+
                 <br>
-    
-                <a class="nav-link active" aria-current="page" href="avaliacao.html" style="color: #55038C; font-size: 15px; font-weight: 600;">Avalie-nos</a>
-    
+
+                <a class="nav-link active" aria-current="page" href="avaliacao.html"
+                    style="color: #55038C; font-size: 15px; font-weight: 600;">Avalie-nos</a>
+
                 Todos os Direitos Reservados.
             </p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI/t1sP66jibD6tnWjXs6pAId9DeN/6o7By9uuwM=" crossorigin="anonymous"></script>
+    <script src="js/adocao.js"></script>
 
 </body>
 
