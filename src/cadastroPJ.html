@@ -42,27 +42,28 @@
     <form class="cadastro-form" action="/cadastro" method="post">
         <select name="tipo" id="tipo" required>
             <option value="" disabled selected>Selecione o tipo de estabelecimento</option>
-            <option value="pessoa_fisica">Clinica Veterinária</option>
-            <option value="pessoa_juridica">Grupo Protetor / Ong</option>
+            <option value="CLINICA_VETERINARIA">Clinica Veterinária</option>
+            <option value="GRUPO_PROTETOR_ONG">Grupo Protetor / Ong</option>
         </select>
         <input type="text" name="nome" placeholder="Razão Social" required>
-        <input type="email" name="email" placeholder="CNPJ" required>
-        <input type="text" name="numero" id="numero" placeholder="Telefone" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+        <input type="text" name="documento" id="numero" placeholder="CNPJ" required>
         <input type="text" name="cep" id="cep" placeholder="CEP" required>
         <input type="text" name="estado" id="estado" placeholder="Estado" required>
         <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
         <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
         <input type="text" name="logradouro" id="logradouro" placeholder="Logradouro" required>
         <input type="text" name="numero" id="numero" placeholder="Numero" required>
-        <input type="text" name="numero" id="numero" placeholder="Telefone" required>
+        <input type="text" name="telefone" id="numero" placeholder="Telefone" required>
         
-
-        <input type="submit" value="Cadastrar">
+        <input type="submit" id="btn-cadastro-pj" value="Cadastrar">
     </form>
     <a href="login.html" class="signup-link">Já tem uma conta? Faça login</a>
 </div>
 
 <script src="js/cep.js"></script>
+<script src="js/usuario.js"></script>
 
 </body>
 <footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
