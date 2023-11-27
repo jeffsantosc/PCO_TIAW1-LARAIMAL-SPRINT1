@@ -136,7 +136,7 @@ footer {
     font-size: small;
 }
 
-.historia .texto{
+.historia .texto {
     background-color: rgba(242, 170, 82, 0.5);
     border-radius: 7px;
     margin: 2px;
@@ -144,19 +144,15 @@ footer {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-   
-   
+    align-items: center; 
 }
 
-
-
-
-
-.historia img{
+.historia .texto img {
     border-radius: 3px;
-    text-align: center;
-    
+    width: 100%;
+    max-height: 200px; 
+    object-fit: cover; 
+    margin-bottom: 13px; 
 }
 
 @media screen and (min-width: 320px) and (max-width: 945px) {
