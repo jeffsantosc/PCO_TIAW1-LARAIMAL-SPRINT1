@@ -1,0 +1,81 @@
+
+
+.navbar {
+    background-color: #dad6d6; 
+    
+}
+.navbar-nav .nav-link {
+    color: black; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #BC69F0; 
+}
+
+a {
+    color: #000;
+    text-decoration: none; 
+}   
+a:hover {
+    color: #BC69F0;
+}
+.btn-custom {
+    background-color: rgb(131, 134, 237); 
+}
+
+.btn-custom:hover {
+    background-color: rgb(188, 105, 240); /
+}
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.rating {
+    margin: 20px 0;
+}
+
+.star {
+    font-size: 45px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.star:hover {
+    color: gold;
+}
+
+.rated {
+    color: gold;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#comments {
+    text-align: left;
+    margin: 20px;
+}
+
+

@@ -4,132 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórum de Discussão</title>
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style/forum_style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f5f5f5;
-            margin-bottom: 80px; /* Adicionei uma margem inferior para acomodar o Footer */
-        }
-
-        .navbar {
-            background-color: #F2AA52;
-            padding: 15px 0;
-        }
-
-        #forum-container {
-            max-width: 800px;
-            margin: 80px auto 20px; /* Adicionei margem superior para acomodar a Navbar */
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 80px; /* Adicionei uma margem inferior para acomodar o Footer */
-        }
-
-        .user-sidebar {
-            text-align: center;
-        }
-
-        .user-avatar-sidebar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            cursor: pointer;
-            border: 5px solid #212121;
-            margin-bottom: 20px;
-        }
-
-        .user-info {
-            color: #55038C;
-        }
-
-        .main-comments {
-            background-color: #F2AA52;
-            color: #fff;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        .post {
-            margin: 10px 0;
-            border-radius: 10px;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 15px;
-        }
-
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-        }
-
-        .footer {
-            background-color: #F2AA52;
-            padding: 20px 0;
-            color: #fff;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 80%;
-            max-height: 80%;
-            overflow: auto;
-            z-index: 1;
-            background: rgba(0, 0, 0, 0.7);
-        }
-
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-        }
-    </style>
+    
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm px-4 " style="background-color: #F2AA52;" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="home.html" style="color: #55038C;">
-                <img src="assets/imgs/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                Lar Animal
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="sobre.html" style="color: #55038C;">Sobre nós</a>
-                    <a class="nav-link active" aria-current="page" href="#" style="color: #55038C;">Como ajudar</a>
-                    <a class="nav-link active" aria-current="page" href="usuario.html" style="color: #55038C;">Perfil</a>
+  
+    <div id="cabecalho">
+        <nav class="navbar navbar-expand-md px-4" style="background-color: #F2AA52;" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html" style="color: #55038C; font-size: 35px; font-weight: 600;">
+                    <img src="./img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                    Lar Animal
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="sobre.html" style="color: #55038C; font-size: 20px; font-weight: 600;">Sobre nós</a>
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #55038C; font-size: 20px; font-weight: 600;">Login</a>
+                    </div>
                 </div>
             </div>
-            
-           
-                </div>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
-    <!-- Conteúdo do fórum -->
+   
     <div id="forum-container" class="container">
         <div class="row">
-            <!-- Barra lateral esquerda -->
+          
             <div class="col-md-3">
                 <div class="user-sidebar mt-4 mb-4">
-                    <!-- Adicione a foto do usuário logado aqui -->
+                   
                     <img src="https://i.pravatar.cc/150" alt="User Avatar" class="user-avatar-sidebar">
                     <div class="user-info">
                         <p>Nome do Usuário</p>
@@ -137,25 +44,24 @@
                     </div>
                 </div>
 
-                <!-- Principais comentários -->
+                
                 <div class="main-comments mt-4">
                     <h4>Principais Comentários</h4>
-                    <!-- Adicione os principais comentários dinamicamente aqui -->
+                    
                     <ul id="main-comments-list">
-                        <!-- Exemplo de item de comentário -->
-                        <!-- <li>Comentário 1</li> -->
+                        
                     </ul>
                 </div>
             </div>
 
-            <!-- Área principal do fórum -->
+           
             <div class="col-md-9">
                 <h1 class="mt-5 mb-4">Fórum de Discussão</h1>
 
-                <!-- Carrossel de Comentários -->
+                
                 <div id="comment-carousel" class="carousel slide mb-4" data-ride="carousel">
                     <div class="carousel-inner">
-                        <!-- Os comentários serão inseridos aqui dinamicamente -->
+                        
                     </div>
                     <a class="carousel-control-prev" href="#comment-carousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -166,13 +72,8 @@
                         <span class="sr-only">Próximo</span>
                     </a>
                 </div>
-
-                <!-- Lista de Posts -->
-                <div id="post-list">
-                    <!-- Os posts serão inseridos aqui dinamicamente -->
+                <div id="post-list">         
                 </div>
-
-                <!-- Formulário para Novo Post -->
                 <form id="post-form" class="mt-4">
                     <h2>Novo Post</h2>
                     <div class="form-group">
@@ -189,123 +90,41 @@
         </div>
     </div>
 
-    <!-- Popup para Foto do Usuário -->
+  
     <div id="user-popup" class="popup">
         <div class="carousel">
-            <!-- Imagens do carrossel serão inseridas aqui dinamicamente -->
+            
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer text-center">
-        <p>&copy; 2023 Fórum de Discussão</p>
-    </div>
-
-    <!-- Bootstrap JS e dependências -->
+   
+    <footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
+        <div>
+            <h6 style="color: #55038C;">Redes sociais:</h6>
+            <p>
+                <span><a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none" style="color: #55038C;">Facebook</a> |
+                </span>
+                <span><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none" style="color: #55038C;">Twitter</a> |
+                </span>
+                <span><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none" style="color: #55038C;">Instagram</a> | </span>
+    
+                <br>
+    
+                <a class="nav-link active" aria-current="page" href="avaliacao.html" style="color: #55038C; font-size: 15px; font-weight: 600;">Avalie-nos</a>
+    
+                Todos os Direitos Reservados.
+            </p>
+        </div>
+    </footer>
+   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/forum.js"></script>
 
-    <!-- Seu JavaScript personalizado aqui -->
 
-    <script>
-        // Função para gerar um número aleatório entre min e max
-        function getRandomNumber(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        const posts = [];
-
-        function renderPosts() {
-            const postList = document.getElementById('post-list');
-            postList.innerHTML = '';
-            posts.forEach(post => {
-                const postElement = document.createElement('div');
-                postElement.classList.add('post', 'p-3', 'bg-light');
-
-                const userAvatar = post.avatar ? `<img src="${post.avatar}" alt="Avatar" class="user-avatar" onclick="showPopup('${post.avatar}')">` : '';
-                
-                postElement.innerHTML = `
-                    ${userAvatar}
-                    <strong>${post.username}</strong>: ${post.message}
-                `;
-                postList.appendChild(postElement);
-            });
-        }
-
-        function showPopup(avatarUrl) {
-            const popup = document.getElementById('user-popup');
-            const carousel = popup.querySelector('.carousel');
-            carousel.innerHTML = ''; // Limpa qualquer imagem existente no carrossel
-
-            // Adiciona uma imagem ao carrossel para cada post com avatar
-            posts.forEach(post => {
-                if (post.avatar) {
-                    const carouselItem = document.createElement('div');
-                    carouselItem.classList.add('carousel-item');
-
-                    const img = document.createElement('img');
-                    img.src = post.avatar;
-                    img.alt = 'Avatar';
-                    img.classList.add('d-block', 'w-100');
-
-                    carouselItem.appendChild(img);
-                    carousel.appendChild(carouselItem);
-                }
-            });
-
-            popup.style.display = 'block';
-        }
-
-        function hidePopup() {
-            const popup = document.getElementById('user-popup');
-            popup.style.display = 'none';
-        }
-
-        function renderCommentsCarousel() {
-            const carouselInner = document.querySelector('#comment-carousel .carousel-inner');
-            carouselInner.innerHTML = '';
-
-            // Adiciona cada comentário como um item de carrossel
-            posts.forEach((post, index) => {
-                const commentElement = document.createElement('div');
-                commentElement.classList.add('carousel-item', index === 0 ? 'active' : '');
-                commentElement.innerHTML = `
-                    <h3>${post.username}</h3>
-                    <p>${post.message}</p>
-                `;
-                carouselInner.appendChild(commentElement);
-            });
-        }
-
-        function renderUserSidebar() {
-            const userSidebar = document.querySelector('.user-sidebar');
-            // Adicione o código para exibir a foto do usuário e outras informações relevantes aqui
-        }
-
-        function renderMainComments() {
-            const mainCommentsList = document.getElementById('main-comments-list');
-            // Adicione o código para exibir os principais comentários dinamicamente aqui
-        }
-
-        document.getElementById('post-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const username = document.getElementById('username').value;
-            const message = document.getElementById('post-content').value;
-            const avatarNumber = getRandomNumber(1, 5); // Gera um número aleatório entre 1 e 5 para escolher a imagem do avatar
-            const avatar = `https://i.pravatar.cc/150?img=${avatarNumber}`; // Usa o serviço Pravatar para imagens de avatar aleatórias
-            posts.push({ username, message, avatar });
-            renderPosts();
-            renderCommentsCarousel();
-            document.getElementById('username').value = '';
-            document.getElementById('post-content').value = '';
-        });
-
-        // Chame as funções de renderização adicionais conforme necessário
-        renderPosts();
-        renderCommentsCarousel();
-        renderUserSidebar();
-        renderMainComments();
-    </script>
 </body>
 </html>

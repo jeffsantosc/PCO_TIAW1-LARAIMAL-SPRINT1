@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento de Consulta</title>
+    <link rel="stylesheet" href="style/voluntario.css">
+    <title>Voluntariado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style_agendamentos.css">
 </head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
+
+
 <div id="cabecalho">
     <nav class="navbar navbar-expand-md px-4" style="background-color: #F2AA52;" data-bs-theme="dark">
         <div class="container-fluid">
@@ -22,60 +30,39 @@
             <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="sobre.html" style="color: #55038C; font-size: 20px; font-weight: 600;">Sobre nós</a>
-                    <a class="nav-link active" aria-current="page" href="#" style="color: #55038C; font-size: 20px; font-weight: 600;">Login</a>
+                    <a class="nav-link active" aria-current="page" href="login.html" style="color: #55038C; font-size: 20px; font-weight: 600;">Login</a>
                 </div>
             </div>
         </div>
     </nav>
 </div>
+<main>
+    <section class="form-container">
+        <h2>Cadastre-se como voluntário</h2>
+        <form action="process_cadastro.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-<body>
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
 
+            <label for="interests">Áreas de Interesse:</label>
+            <textarea id="interests" name="interests" rows="4" required></textarea>
 
-    <header>
-        <h1>Agendamento de Consulta</h1>
-    </header>
-    <div class="container">
-        <div class="clinic-card">
-            <img class="clinic-img" src="img/cimev.JPG" alt="Clinica 1">
-            <h3>Climev</h3>
-            <button class="clinic-button" onclick="showPopup('Climev', 'R. São Mateus 271 - Água Branca')">Agendar</button>
-        </div>
-        <div class="clinic-card">
-            <img class="clinic-img" src="img/terradosbicho.JPG" alt="Clinica 2">
-            <h3>Terra Dos Bichos</h3>
-            <button class="clinic-button" onclick="showPopup('Terra dos Bichos', 'Av. Dr. João Augusto Fonseca e Silva 876 - Novo Eldorado')">Agendar</button>
-        </div>
-        <div class="clinic-card">
-            <img class="clinic-img" src="img/petcenter.JPG" alt="Clinica 3">
-            <h3>Pet Center</h3>
-            <button class="clinic-button" onclick="showPopup('Pet Center', 'R. Marte 830 - Jardim Riacho das Pedras')">Agendar</button>
-        </div>
-      
-      
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+</main>
 
-    <div class="popup" id="clinicPopup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2 id="clinicName"></h2>
-            <p id="clinicAddress"></p>
-            <p>Selecione uma data e horário:</p>
-            <input type="date" id="appointmentDate">
-            <input type="time" id="appointmentTime">
-            <button class="agendar-button" onclick="agendarConsulta()">Agendar</button>
-        </div>
-    </div>
-    <head>
-
-        
-        
-        <script src="js/agendamentos.js"></script>
-    </head>
-</body>
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
@@ -99,5 +86,3 @@
         </p>
     </div>
 </footer>
-</body>
-</Html>

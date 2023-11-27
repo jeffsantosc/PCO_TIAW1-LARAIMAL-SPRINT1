@@ -7,7 +7,7 @@
     <title>Aba Educacional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="edu_style.css">
+        <link rel="stylesheet" href="style/edu_style.css">
 </head>
 
 <body>
@@ -16,27 +16,26 @@
         </script>
 
     <header>
-        <nav class="navbar navbar-expand-sm px-4 " style="background-color: #F2AA52;" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html" style="color: #55038C;">
-                    <img src="./img/logo.png" alt="Logo" width="30" height="30"
-                        class="d-inline-block align-text-top">
-                    Lar Animal
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavbar">
+        <div id="cabecalho">
+            <nav class="navbar navbar-expand-md px-4" style="background-color: #F2AA52;" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="home.html" style="color: #55038C; font-size: 35px; font-weight: 600;">
+                        <img src="./img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                        Lar Animal
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="sobre.html"
-                                style="color: #55038C;">Sobre
-                                nós</a>
-                            <a class="nav-link active" aria-current="page" href="usuario.html"
-                                style="color: #55038C;">Perfil</a>
+                            <a class="nav-link active" aria-current="page" href="sobre.html" style="color: #55038C; font-size: 20px; font-weight: 600;">Sobre nós</a>
+                            <a class="nav-link active" aria-current="page" href="#" style="color: #55038C; font-size: 20px; font-weight: 600;">Login</a>
                         </div>
                     </div>
-            </div>
-        </nav>
+                </div>
+            </nav>
+        </div>
+        
     </header>
 
     <main>
@@ -81,7 +80,7 @@
                     <h2 class="card-title" style="color: #55038C;"><br><strong>MIDIAS</strong></h2>
                     <div class="row">
                         <div class="col-12 col-md-3 pt-3">
-                            <img src="./img/conversa.png" class="card-img-top h-"
+                            <img src="img/conversa.png" class="card-img-top h-"
                                 alt="Imagem Indisponível">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="artigo.html" class="text-decoration-none card-link"
@@ -97,7 +96,7 @@
                         </div>
 
                         <div class="col-12 col-md-3 pt-3">
-                            <img src="./img/conversa.png" class="card-img-top h-" alt="Imagem Indisponível">
+                            <img src="img/conversa.png" class="card-img-top h-" alt="Imagem Indisponível">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="artigo.html" class="text-decoration-none card-link"
                                         style="color: #F2AA52;">Brincadeiras para gatos</a></h5>
@@ -112,7 +111,7 @@
                         </div>
 
                         <div class="col-12 col-md-3 pt-3">
-                            <img src="assets/imgs/vacinacao.png"
+                            <img src="img/conversa.png"
                                 class="card-img-top h-" alt="Imagem Indisponível">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="artigo.html" class="text-decoration-none card-link"
@@ -129,7 +128,7 @@
                         </div>
 
                         <div class="col-12 col-md-3 pt-3">
-                            <img src="assets/imgs/cuidados pet.png"
+                            <img src="img/conversa.png"
                                 class="card-img-top h-" alt="Imagem Indisponível">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="artigo.html" class="text-decoration-none card-link"
@@ -192,25 +191,27 @@
         </div>
     </main>
 
-    <footer>
+    <footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
         <div>
             <h6 style="color: #55038C;">Redes sociais:</h6>
             <p>
-                <spam><a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                        class="text-decoration-none">Facebook</a> |
-                </spam>
-                <spam><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
-                        class="text-decoration-none">Twitter</a> |
-                </spam>
-                <spam><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                        class="text-decoration-none">Instagram</a> | </spam>
-
+                <span><a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none" style="color: #55038C;">Facebook</a> |
+                </span>
+                <span><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none" style="color: #55038C;">Twitter</a> |
+                </span>
+                <span><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none" style="color: #55038C;">Instagram</a> | </span>
+    
+                <br>
+    
+                <a class="nav-link active" aria-current="page" href="avaliacao.html" style="color: #55038C; font-size: 15px; font-weight: 600;">Avalie-nos</a>
+    
                 Todos os Direitos Reservados.
             </p>
         </div>
     </footer>
-
-
 
 </body>
 

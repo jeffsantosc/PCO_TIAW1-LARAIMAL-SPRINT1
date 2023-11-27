@@ -1,14 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="Pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento de Consulta</title>
+    <title>Cadastro Pessoa Fisica</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style_agendamentos.css">
+    <link rel="stylesheet" href="style/pf.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
 <div id="cabecalho">
     <nav class="navbar navbar-expand-md px-4" style="background-color: #F2AA52;" data-bs-theme="dark">
         <div class="container-fluid">
@@ -30,55 +37,27 @@
 </div>
 
 
-<body>
+<div class="cadastro-container">
+    <h2>Cadastro</h2>
+    <form id="cadastro-form" class="cadastro-form" action="http://localhost:3000/pessoas" method="post">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="text" name="numero" id="numero" placeholder="CPF" required>
+        <input type="text" name="cep" id="cep" placeholder="CEP" required>
+        <input type="text" name="estado" id="estado" placeholder="Estado" required>
+        <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+        <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+        <input type="text" name="logradouro" id="logradouro" placeholder="Logradouro" required>
+        <input type="text" name="numero" id="numero" placeholder="Numero" required>
+        <input type="text" name="numero" id="numero" placeholder="Telefone" required>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <a href="login.html" class="signup-link">Já tem uma conta? Faça login</a>
+</div>
 
-
-    <header>
-        <h1>Agendamento de Consulta</h1>
-    </header>
-    <div class="container">
-        <div class="clinic-card">
-            <img class="clinic-img" src="img/cimev.JPG" alt="Clinica 1">
-            <h3>Climev</h3>
-            <button class="clinic-button" onclick="showPopup('Climev', 'R. São Mateus 271 - Água Branca')">Agendar</button>
-        </div>
-        <div class="clinic-card">
-            <img class="clinic-img" src="img/terradosbicho.JPG" alt="Clinica 2">
-            <h3>Terra Dos Bichos</h3>
-            <button class="clinic-button" onclick="showPopup('Terra dos Bichos', 'Av. Dr. João Augusto Fonseca e Silva 876 - Novo Eldorado')">Agendar</button>
-        </div>
-        <div class="clinic-card">
-            <img class="clinic-img" src="img/petcenter.JPG" alt="Clinica 3">
-            <h3>Pet Center</h3>
-            <button class="clinic-button" onclick="showPopup('Pet Center', 'R. Marte 830 - Jardim Riacho das Pedras')">Agendar</button>
-        </div>
-      
-      
-
-    <div class="popup" id="clinicPopup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2 id="clinicName"></h2>
-            <p id="clinicAddress"></p>
-            <p>Selecione uma data e horário:</p>
-            <input type="date" id="appointmentDate">
-            <input type="time" id="appointmentTime">
-            <button class="agendar-button" onclick="agendarConsulta()">Agendar</button>
-        </div>
-    </div>
-    <head>
-
-        
-        
-        <script src="js/agendamentos.js"></script>
-    </head>
 </body>
 
-
-
-
-
-<footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
+<footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; position: fixed; bottom: 0; left: 0; right: 0;">
     <div>
         <h6 style="color: #55038C;">Redes sociais:</h6>
         <p>
@@ -91,13 +70,8 @@
             <span><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
                     class="text-decoration-none" style="color: #55038C;">Instagram</a> | </span>
 
-            <br>
-
-            <a class="nav-link active" aria-current="page" href="avaliacao.html" style="color: #55038C; font-size: 15px; font-weight: 600;">Avalie-nos</a>
-
             Todos os Direitos Reservados.
         </p>
     </div>
 </footer>
-</body>
-</Html>
+</html>

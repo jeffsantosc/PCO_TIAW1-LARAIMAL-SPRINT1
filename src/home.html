@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/homepage.css">
     <title>Lar Animal Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-
 <body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -18,59 +17,50 @@
     </script>
 
 
-    <div id="cabecalho">
-        <nav class="navbar navbar-expand-sm px-4 " style="background-color: #F2AA52;" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html" style="color: #55038C;">
-                    <img src="./img/logo.png" alt="Logo" width="30" height="30"
-                        class="d-inline-block align-text-top">
-                    Lar Animal
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="sobre.html" style="color: #55038C;">Sobre
-                                nós</a>
-                            <a class="nav-link active" aria-current="page" href="#" style="color: #55038C;">Como
-                                ajudar</a>
-                            <a class="nav-link active" aria-current="page" href="#" style="color: #55038C;">Entrar</a>
-                        </div>
-                    </div>
+<div id="cabecalho">
+    <nav class="navbar navbar-expand-md px-4" style="background-color: #F2AA52;" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html" style="color: #55038C; font-size: 35px; font-weight: 600;">
+                <img src="./img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                Lar Animal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="sobre.html" style="color: #55038C; font-size: 20px; font-weight: 600;">Sobre nós</a>
+                    <a class="nav-link active" aria-current="page" href="login.html" style="color: #55038C; font-size: 20px; font-weight: 600;">Login</a>
+                </div>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+</div>
+
     <section id="conteudo">
         <nav id="barralat">
             <ul class="list-group">
                 <a href="perguntas.html" class="list-group-item list-group-item-action">Perguntas Frequentes</a>
-                <a href="#" class="list-group-item list-group-item-action">Cadastre-se</a>
-                <a href="#" class="list-group-item list-group-item-action">Pontos de Resgate</a>
-                <a href="#" class="list-group-item list-group-item-action">Entre em contato</a>
+                <a href="forum.html" class="list-group-item list-group-item-action">Fóruns</a>
+                <a href="educacional.html" class="list-group-item list-group-item-action">Area Educacional</a>
+                <a href="contato.html" class="list-group-item list-group-item-action">Entre em contato</a>
+                <a href="agendamentos.html" class="list-group-item list-group-item-action">Agendar consulta com Parceiros</a>
             </ul>
         </nav>
         <article class="carrousel">
             <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/campanha ficticia.png" class="d-block w-100" alt="Imagem Indisponível">
+                        <a href="sobre.html">
+                            <img src="img/Capa.jpg" class="d-block w-100" alt="Imagem 1">
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/capa site.png" class="d-block w-100" alt="Imagem Indisponível">
+                        <a href="mapa.html">
+                            <img src="img/parceiros.jpg" class="d-block w-100" alt="Imagem 2">
+                        </a>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/capa_carrosel.png" class="d-block w-100" alt="Imagem Indisponível">
-                    </div>
-                </div>
+                 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -82,6 +72,20 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+        <script>
+            $(document).ready(function () {
+                $('.carousel').carousel();
+            });
+        </script>
+    </body>
+    
+    </html>
 
             <article class="about">
                 <h5 class="card-title" style="color: #55038C;"><br><strong>QUEM SOMOS?</strong> </h5>
@@ -104,35 +108,37 @@
 
         <div class="container">
             <div class="row">
-
-                <div class="row pt-3 pb-3">
+                <div class="col-12 pt-3 pb-3">
                     <h2 style="color: #55038C;"><strong>Principais Serviços</strong></h2>
-                    <div class="col-12 col-md-3 pt-3">
-                        <img src="./img/doacao.png" alt="Imagem não encontrada" class="card_img">
-                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
-                                style="color: #F2AA52;"><br><strong>Doações</strong></a></h5>
-                    </div>
-
-                    <div class="col-12 col-md-3 pt-3">
-                        <img src="./img/adocao.png" alt="Imagem não encontrada" class="card_img">
-                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
-                                style="color: #F2AA52;"><br><strong>Adoção</strong></a></h5>
-                    </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <img src="assets/imgs/voluntario1-adoção.png" alt="Imagem não encontrada" class="card_img">
-                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
-                                style="color: #F2AA52;"><br><strong>Voluntariado</strong></a></h5>
-                    </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <img src="./img/discussao.png" alt="Imagem não encontrada" class="card_img">
-                        <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
-                                style="color: #F2AA52;"><br><strong>Campanhas</strong></a></h5>
-                    </div>
                 </div>
+        
+                <div class="col-12 col-md-3 pt-3">
+                    <a href="doacoes.html" class="text-decoration-none text-dark card-link">
+                        <img src="./img/doacao.png" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title" style="color: #F2AA52;"><br><strong>Doações</strong></h5>
+                    </a>
+                </div>
+        
+                <div class="col-12 col-md-3 pt-3">
+                    <a href="adocao.html" class="text-decoration-none text-dark card-link">
+                        <img src="./img/adocao.png" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title" style="color: #F2AA52;"><br><strong>Adoção</strong></h5>
+                    </a>
+                </div>
+        
+                <div class="col-12 col-md-3 pt-3">
+                    <a href="voluntario.html" class="text-decoration-none text-dark card-link">
+                        <img src="img/voluntario1-adoção.png" alt="Imagem não encontrada" class="card_img">
+                        <h5 class="card-title" style="color: #F2AA52;"><br><strong>Voluntariado</strong></h5>
+                    </a>
+                </div>
+        
+           
+            
 
-                <div class="row pt-5 pb-3">
+                <div class="historia row pt-5 pb-3">
                     <h2 style="color: #55038C;"><strong>Histórias de Sucesso</strong></h2>
-                    <div class="col-12 col-md-3 pt-3">
+                    <div class="texto col-12 col-md-3 pt-3">
                         <img src="./img/filhote1.jpg" alt="Imagem não encontrada" class="card_img">
                         <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
                                 style="color: #F2AA52;"><br><strong>Corolino</strong></a></h5>
@@ -143,29 +149,29 @@
                         </p>
                     </div>
 
-                    <div class="col-12 col-md-3 pt-3">
+                    <div class="texto col-12 col-md-3 pt-3">
                         <img src="./img/filhote2.jpg" alt="Imagem não encontrada" class="card_img">
                         <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
                                 style="color: #F2AA52;"><br><strong>Senhor Pipo</strong></a></h5>
                         <p class="card-text">
-                            Senhor Pipo, foi abandonado em uma caixa de papelão junto de sua mãe e seus irmãos próximo a
-                            uma igreja onde foi resgatado pelo grupo protetor Pata amiga. Ele e os outros foram postos
-                            para a adoção em uma feira feita em parceria com a prefeitura de Contagem e hoje é mascote
-                            de uma clínica veterinária após ser adotado por sua dona.
+                            Senhor Pipo, foi abandonado em uma caixa de papelão junto de sua família próximo a
+                            uma igreja onde foi resgatado pelo grupo protetor Pata amiga. Eles foram postos
+                            para a adoção em uma feira da prefeitura de Contagem e hoje é mascote
+                            de uma clínica veterinária.
                         </p>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
+                    <div class="texto col-12 col-md-3 pt-3">
                         <img src="./img/filhote_crianca.jpg" alt="Imagem não encontrada" class="card_img">
                         <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
                                 style="color: #F2AA52;"><br><strong>Pudim</strong></a></h5>
                         <p class="card-text">
-                            Pudim foi abandonado na rua quando seus antigos donos tiveram seu primeiro filho, e ficou
-                            vagando pelas ruas da grande BH onde sofria maus tratos de todos até ser resgatado e
-                            posteriormente adoatado por Frederico e Ariel e sua família. Agora Pudim vive feliz com sua
+                            Pudim foi abandonado na rua, e ficou
+                            vagando pelas ruas da grande BH onde sofria maus tratos até ser resgatado e
+                            posteriormente adoatado por Frederico e sua família. Agora Pudim vive feliz com sua
                             nova família fazendo compania para Lucas, o filho do casal.
                         </p>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
+                    <div class="texto col-12 col-md-3 pt-3">
                         <img src="./img/gato_crianca.jpg" alt="Imagem não encontrada" class="card_img">
                         <h5 class="card-title"><a href="#" class="text-decoration-none text-dark card-link"
                                 style="color: #F2AA52;"><br><strong>Jujuba</strong></a></h5>
@@ -180,22 +186,25 @@
             </div>
         </div>
     </div>
+<br>
 
-
-
-    <footer>
+    <footer style="background-color: #F2AA52; color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
         <div>
             <h6 style="color: #55038C;">Redes sociais:</h6>
             <p>
-                <spam><a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                        class="text-decoration-none">Facebook</a> |
-                </spam>
-                <spam><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
-                        class="text-decoration-none">Twitter</a> |
-                </spam>
-                <spam><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                        class="text-decoration-none">Instagram</a> | </spam>
-
+                <span><a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none" style="color: #55038C;">Facebook</a> |
+                </span>
+                <span><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none" style="color: #55038C;">Twitter</a> |
+                </span>
+                <span><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none" style="color: #55038C;">Instagram</a> | </span>
+    
+                <br>
+    
+                <a class="nav-link active" aria-current="page" href="avaliacao.html" style="color: #55038C; font-size: 15px; font-weight: 600;">Avalie-nos</a>
+    
                 Todos os Direitos Reservados.
             </p>
         </div>
