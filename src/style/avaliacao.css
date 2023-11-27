@@ -79,3 +79,11 @@ button {
 }
 
 
+.avaliacao{
+    text-align: center;
+    
+}
+
+#submitBtn{
+    background-color: rgba(242, 170, 82, 0.8);
+}
