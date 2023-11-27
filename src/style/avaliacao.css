@@ -86,7 +86,7 @@ button {
 
 #submitBtn{
     background-color: rgba(242, 170, 82, 0.8);
-    
+
 }
 
 /* #comment{
@@ -95,7 +95,6 @@ button {
 
 input[type=text]:hover,
 textarea:hover {
-    background: ;
     border: 1px solid rgba(242, 170, 82);
 }
 
