@@ -61,7 +61,7 @@
                         </a>
                         <h5 class="card-title">Pet Exemplo</h5>
                         <p class="card-text">Descrição do pet 1.</p>
-                        <button type="button" class="btn" data-bs-toggle="modal"
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#novoPetModal"
                             style="color: white; background-color:#55038C;" data-bs-target="#modalPet1">Mostrar
                             mais</button>
                     </div>
@@ -99,7 +99,23 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="petDescricao" class="form-label">Descrição breve do Pet:</label>
-                                    <textarea class="form-control" id="petDescricao" required></textarea>
+                                    <input type="text" class="form-control" id="petDescricao" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="petDescricaoGrande" class="form-label">Descrição completa do Pet:</label>
+                                    <textarea class="form-control" id="petDescricaoGrande" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="donoEmail" class="form-label">Seu E-mail (Dono):</label>
+                                    <input type="text" class="form-control" id="donoEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="donoTelefone" class="form-label">Seu Telefone (Dono):</label>
+                                    <input type="text" class="form-control" id="donoTelefone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="donoImagem" class="form-label">Imagem do Dono (Opcional):</label>
+                                    <input type="file" class="form-control" id="donoImagem" accept="image/*">
                                 </div>
                                 <div class="text-center">
                                     <button type="button" class="btn mx-auto"
@@ -115,7 +131,7 @@
         </div>
     </div>
 
-    <!----------------Botão para novo Pet ------------------>
+    <!----------------Botão para novo Pet ----vai p/ modal-------------->
     <div style="color: #55038C; padding: 10px; font-size: small; text-align: center; bottom: 0; left: 0; right: 0;">
         <button type="button" class="btn" id="addPet" data-bs-toggle="modal" data-bs-target="#novoPetModal"
             style="color: white; background-color:#55038C;">Adicionar Pet</button>
