@@ -54,7 +54,17 @@
     </form>
     <a href="login.html" class="signup-link">Já tem uma conta? Faça login</a>
 </div>
-
+<script>
+    
+    fetch('http://localhost:3000/pessoas')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Dados das pessoas:', data);
+      })
+      .catch(error => {
+        console.error('Erro ao obter dados:', error);
+      });
+  </script>
 
 </body>
 

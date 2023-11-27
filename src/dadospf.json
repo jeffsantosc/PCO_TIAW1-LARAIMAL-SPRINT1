@@ -1,0 +1,30 @@
+{
+    "pessoas": [
+      {
+        "id": 1,
+        "nome": "João",
+        "email": "joao@example.com",
+        "numero": "12345678900",
+        "cep": "12345-678",
+        "estado": "Estado",
+        "cidade": "Cidade",
+        "bairro": "Bairro",
+        "logradouro": "Rua Exemplo",
+        "numeroResidencial": "123",
+        "telefone": "123456789"
+      },
+      {
+        "id": 2,
+        "nome": "Maria",
+        "email": "maria@example.com",
+        "numero": "98765432100",
+        "cep": "54321-098",
+        "estado": "Outro Estado",
+        "cidade": "Outra Cidade",
+        "bairro": "Outro Bairro",
+        "logradouro": "Rua Teste",
+        "numeroResidencial": "456",
+        "telefone": "987654321"
+      }
+    ]
+  }
